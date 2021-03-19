@@ -92,6 +92,7 @@ func main() {
 	} else {
 		r = csv.NewReader(os.Stdin)
 	}
+	r.Comma = ';'
 
 	// Read the input .csv file line by line. Save to a new file after reaching
 	// the amount of records prescribed by the -records flag.
